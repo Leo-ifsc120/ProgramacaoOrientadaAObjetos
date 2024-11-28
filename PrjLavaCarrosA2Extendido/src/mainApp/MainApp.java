@@ -37,19 +37,19 @@ public class MainApp
         switch(categoria)
         {
             case "1":
-                modelo1.setCategoria(ECategoria.eCategoria.Pequeno);
+                veiculo1.getModelo().setCategoria(ECategoria.PEQUENO);
                 break;
             case "2":
-                modelo1.setCategoria(ECategoria.eCategoria.Medio);
+                veiculo1.getModelo().setCategoria(ECategoria.MEDIO);
                 break;
             case "3":
-                modelo1.setCategoria(ECategoria.eCategoria.Grande);
+                veiculo1.getModelo().setCategoria(ECategoria.GRANDE);
                 break;
             case "4":
-                modelo1.setCategoria(ECategoria.eCategoria.Moto);
+                veiculo1.getModelo().setCategoria(ECategoria.MOTO);
                 break;
             case "5":
-                modelo1.setCategoria(ECategoria.eCategoria.Padrao);
+                veiculo1.getModelo().setCategoria(ECategoria.PADRAO);
                 break;
             default:
                 System.out.println("Opção inválida");
@@ -66,22 +66,22 @@ public class MainApp
         switch(combustivel)
         {
             case "1":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Gasolina);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.GASOLINA);
                 break;
             case "2":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Etanol);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.ETANOL);
                 break;
             case "3":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Flex);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.FLEX);
                 break;
             case "4":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Diesel);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.DIESEL);
                 break;
             case "5":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.GNV);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.GNV);
                 break;
             case "6":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Outro);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.OUTRO);
                 break;
             default:
                 System.out.println("Opção inválida");

@@ -7,7 +7,7 @@ public class Modelo
     private String descricao;
     private Marca marca;
     private Motor motor;
-    private ECategoria.eCategoria categoria;
+    private ECategoria categoria;
 
     public Modelo()
     {
@@ -51,12 +51,12 @@ public class Modelo
         return motor;
     }
 
-    public ECategoria.eCategoria getCategoria()
+    public ECategoria getCategoria()
     {
         return categoria;
     }
 
-    public void setCategoria(ECategoria.eCategoria categoria)
+    public void setCategoria(ECategoria categoria)
     {
         this.categoria = categoria;
     }
