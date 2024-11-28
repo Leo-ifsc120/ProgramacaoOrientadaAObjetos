@@ -7,12 +7,13 @@ public class MainApp
 {
     public static void main(String[] args)
     {
-        String marca, descricao, placa, combustivel, categoria;
+        String marca, descricao, cor, placa, combustivel, categoria;
         int potencia;
         Scanner leia = new Scanner(System.in);
         Marca marca1 = new Marca();
         Modelo modelo1 = new Modelo();
         Veiculo veiculo1 = new Veiculo();
+        Cor cor1 = new Cor();
 
 
 
@@ -25,6 +26,11 @@ public class MainApp
         descricao = leia.next();
         modelo1.setDescricao(descricao);
         veiculo1.setModelo(modelo1);
+
+        System.out.print("Informe a cor do carro: ");
+        cor = leia.next();
+        cor1.setNome(cor);
+        veiculo1.setCor(cor1);
 
         System.out.println("Informe a categoria do carro\n1 - Pequeno\n2 - Medio\n3 - Grande\n4 - Moto\n5 - Padrao");
         categoria = leia.next();
@@ -82,8 +88,6 @@ public class MainApp
                 break;
         }
 
-
-
         System.out.print("Informe a placa do carro: ");
         placa = leia.next();
         veiculo1.setPlaca(placa);
@@ -97,6 +101,7 @@ public class MainApp
 
         System.out.println("Placa.......: " + veiculo.getPlaca());
         System.out.println("Modelo......: " + veiculo.getModelo().getDescricao());
+        System.out.println("Cor.........: " + veiculo.getCor().getNome());
         System.out.println("Marca.......: " + veiculo.getModelo().getMarca().getNome());
         System.out.println("Motor.......: cv " + veiculo.getModelo().getMotor().getPotencia());
         System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel());
