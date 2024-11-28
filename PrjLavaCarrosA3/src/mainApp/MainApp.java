@@ -1,18 +1,20 @@
 package mainApp;
 
 import domain.*;
+
 import java.util.Scanner;
 
 public class MainApp
 {
     public static void main(String[] args)
     {
-        String marca, descricao, placa, combustivel, categoria;
+        String marca, descricao, cor, placa, combustivel, categoria;
         int potencia;
         Scanner leia = new Scanner(System.in);
         Marca marca1 = new Marca();
         Modelo modelo1 = new Modelo();
         Veiculo veiculo1 = new Veiculo();
+        Cor cor1 = new Cor();
 
 
 
@@ -26,24 +28,30 @@ public class MainApp
         modelo1.setDescricao(descricao);
         veiculo1.setModelo(modelo1);
 
+        System.out.print("Informe a cor do carro: ");
+        cor = leia.next();
+        cor1.setNome(cor);
+        veiculo1.setCor(cor1);
+
+
         System.out.println("Informe a categoria do carro\n1 - Pequeno\n2 - Medio\n3 - Grande\n4 - Moto\n5 - Padrao");
         categoria = leia.next();
         switch(categoria)
         {
             case "1":
-                modelo1.setCategoria(ECategoria.eCategoria.Pequeno);
+                veiculo1.getModelo().setCategoria(ECategoria.PEQUENO);
                 break;
             case "2":
-                modelo1.setCategoria(ECategoria.eCategoria.Medio);
+                veiculo1.getModelo().setCategoria(ECategoria.MEDIO);
                 break;
             case "3":
-                modelo1.setCategoria(ECategoria.eCategoria.Grande);
+                veiculo1.getModelo().setCategoria(ECategoria.GRANDE);
                 break;
             case "4":
-                modelo1.setCategoria(ECategoria.eCategoria.Moto);
+                veiculo1.getModelo().setCategoria(ECategoria.MOTO);
                 break;
             case "5":
-                modelo1.setCategoria(ECategoria.eCategoria.Padrao);
+                veiculo1.getModelo().setCategoria(ECategoria.PADRAO);
                 break;
             default:
                 System.out.println("Opção inválida");
@@ -60,29 +68,27 @@ public class MainApp
         switch(combustivel)
         {
             case "1":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Gasolina);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.GASOLINA);
                 break;
             case "2":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Etanol);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.ETANOL);
                 break;
             case "3":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Flex);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.FLEX);
                 break;
             case "4":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Diesel);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.DIESEL);
                 break;
             case "5":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.GNV);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.GNV);
                 break;
             case "6":
-                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.eTipoCombustivel.Outro);
+                veiculo1.getModelo().getMotor().setTipoCombustivel(ETipoCombustivel.OUTRO);
                 break;
             default:
                 System.out.println("Opção inválida");
                 break;
         }
-
-
 
         System.out.print("Informe a placa do carro: ");
         placa = leia.next();
@@ -97,9 +103,11 @@ public class MainApp
 
         System.out.println("Placa.......: " + veiculo.getPlaca());
         System.out.println("Modelo......: " + veiculo.getModelo().getDescricao());
+        System.out.println("Categoria...: " + veiculo.getModelo().getCategoria().getId() + veiculo.getModelo().getCategoria().getDescricao());
+        System.out.println("Cor.........: " + veiculo.getCor().getNome());
         System.out.println("Marca.......: " + veiculo.getModelo().getMarca().getNome());
         System.out.println("Motor.......: cv " + veiculo.getModelo().getMotor().getPotencia());
-        System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel());
+        System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel().getId() + veiculo.getModelo().getMotor().getTipoCombustivel().getDescricao());
 
     }
 
