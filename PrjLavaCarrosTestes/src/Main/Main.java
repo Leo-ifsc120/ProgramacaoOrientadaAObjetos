@@ -1,5 +1,7 @@
 package Main;
 
+import domain.*;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -63,23 +65,42 @@ public class Main extends JDialog
 
     private void onOK()
     {
-
+        dispose();
     }
 
     private void onCancel()
     {
         // add your code here if necessary
         dispose();
+        System.exit(0);
     }
 
     public static void main(String[] args)
     {
+
+        Marca marca1 = new Marca();
+        Modelo modelo1 = new Modelo();
+        Veiculo veiculo1 = new Veiculo();
+
+
         Main dialog = new Main();
         dialog.setSize(480,360);
         dialog.setLocationRelativeTo(null);
         dialog.setTitle("Insira os dados do carro");
         dialog.setVisible(true);
+        Show print = new Show();
+        print.setSize(720,360);
+        print.setLocationRelativeTo(null);
+        print.setTitle("Dados informados");
+        print.setPlaca(dialog.placa.getText());
+        print.setCor(dialog.cor.getText());
+        print.setModelo(dialog.modelo.getText());
+        print.setMarca(dialog.marca.getText());
+        print.setPotencia(dialog.potencia.getText());
+        print.setVisible(true);
         System.exit(0);
+
+
 
     }
 }
