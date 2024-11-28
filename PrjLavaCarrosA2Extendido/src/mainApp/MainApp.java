@@ -32,6 +32,7 @@ public class MainApp
         cor1.setNome(cor);
         veiculo1.setCor(cor1);
 
+
         System.out.println("Informe a categoria do carro\n1 - Pequeno\n2 - Medio\n3 - Grande\n4 - Moto\n5 - Padrao");
         categoria = leia.next();
         switch(categoria)
@@ -101,10 +102,11 @@ public class MainApp
 
         System.out.println("Placa.......: " + veiculo.getPlaca());
         System.out.println("Modelo......: " + veiculo.getModelo().getDescricao());
+        System.out.println("Categoria...: " + veiculo.getModelo().getCategoria().getId() + veiculo.getModelo().getCategoria().getDescricao());
         System.out.println("Cor.........: " + veiculo.getCor().getNome());
         System.out.println("Marca.......: " + veiculo.getModelo().getMarca().getNome());
         System.out.println("Motor.......: cv " + veiculo.getModelo().getMotor().getPotencia());
-        System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel());
+        System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel().getId() + veiculo.getModelo().getMotor().getTipoCombustivel().getDescricao());
 
     }
 

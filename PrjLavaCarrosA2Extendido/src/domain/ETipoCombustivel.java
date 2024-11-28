@@ -19,4 +19,13 @@ public enum ETipoCombustivel
         this.descricao = descricao;
     }
 
+    public String getDescricao()
+    {
+        return descricao;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
 }

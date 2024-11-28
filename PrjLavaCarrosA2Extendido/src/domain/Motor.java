@@ -4,7 +4,7 @@ public class Motor
 {
 
     private int potencia;
-    private ETipoCombustivel.eTipoCombustivel tipoCombustivel;
+    private ETipoCombustivel tipoCombustivel;
 
     public int getPotencia()
     {
@@ -16,12 +16,12 @@ public class Motor
         this.potencia = potencia;
     }
 
-    public ETipoCombustivel.eTipoCombustivel getTipoCombustivel()
+    public ETipoCombustivel getTipoCombustivel()
     {
         return tipoCombustivel;
     }
 
-    public void setTipoCombustivel(ETipoCombustivel.eTipoCombustivel tipoCombustivel)
+    public void setTipoCombustivel(ETipoCombustivel tipoCombustivel)
     {
         this.tipoCombustivel = tipoCombustivel;
     }
