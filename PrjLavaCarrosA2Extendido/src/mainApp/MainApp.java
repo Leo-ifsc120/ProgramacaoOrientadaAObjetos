@@ -1,7 +1,6 @@
 package mainApp;
 
 import domain.*;
-
 import java.util.Scanner;
 
 public class MainApp
