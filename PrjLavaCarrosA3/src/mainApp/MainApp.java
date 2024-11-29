@@ -96,6 +96,8 @@ public class MainApp
 
         print(veiculo1);
 
+        leia.close();
+
     }
 
     public static void print(Veiculo veiculo)
