@@ -11,7 +11,7 @@ public abstract class Cliente
     private String email;
     private Date dataCadastro;
     private Pontuacao pontuacao;
-
+    private Veiculo veiculo;
 
     public Cliente()
     {
