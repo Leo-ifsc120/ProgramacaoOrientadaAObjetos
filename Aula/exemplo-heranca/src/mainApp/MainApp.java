@@ -25,19 +25,22 @@ public class MainApp
         fornecedorInternacional.setFone("345543");
         fornecedorInternacional.setPais("USA");
         fornecedorInternacional.setNif("343434343");
+
         printFornecedorInternacional(fornecedorInternacional);
 
     }
 
+
+
     public static void printFornecedorNacional(Nacional nacional)
     {
-        System.out.println("-------Fornecedor Nacional-------");
+        System.out.println("---------Fornecedor Nacional----------");
         System.out.println("ID...: " + nacional.getId());
         System.out.println("Nome.: " + nacional.getNome());
         System.out.println("Email: " + nacional.getEmail());
         System.out.println("Fone.: " + nacional.getFone());
         System.out.println("CNPJ.: " + nacional.getCnpj());
-        System.out.println("----------------------------------");
+        System.out.println("--------------------------------------\n");
     }
 
     public static void printFornecedorInternacional(Internacinal internacional)
@@ -49,7 +52,7 @@ public class MainApp
         System.out.println("Fone.: " + internacional.getFone());
         System.out.println("Pais.: " + internacional.getPais());
         System.out.println("NIF..: " + internacional.getNif());
-        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------\n");
     }
 
 }
