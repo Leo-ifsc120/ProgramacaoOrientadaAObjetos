@@ -15,7 +15,7 @@ public abstract class Cliente
 
     public Cliente()
     {
-        Pontuacao pontuacao = new Pontuacao();
+        pontuacao = new Pontuacao();
     }
 
     public int getId()
@@ -71,6 +71,16 @@ public abstract class Cliente
     public Pontuacao getPontuacao()
     {
         return pontuacao;
+    }
+
+    public Veiculo getVeiculo()
+    {
+        return veiculo;
+    }
+
+    public void setVeiculo(Veiculo veiculo)
+    {
+        this.veiculo = veiculo;
     }
 
 }
