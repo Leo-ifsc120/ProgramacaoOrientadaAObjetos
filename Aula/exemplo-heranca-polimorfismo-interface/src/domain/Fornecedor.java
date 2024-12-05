@@ -48,17 +48,27 @@ public abstract class Fornecedor implements IResumoDados
         this.fone = fone;
     }
 
+    @Override
     public String getDados()
     {
+        StringBuilder dados = new StringBuilder();
+        dados.append("ID.......: ").append(this.getId()).append("\n");
+        dados.append("Nome.....: ").append(this.getNome()).append("\n");
+        dados.append("Email....: ").append(this.getEmail()).append("\n");
+        dados.append("fone.....: ").append(this.getFone()).append("\n");
 
 
-        return null;
+
+
+        return dados.toString();
     }
 
+    @Override
     public String getDados(String msg)
     {
+        StringBuilder dados = new StringBuilder();
+        dados.append(getDados()).append("\n").append("Mensagem: ").append(msg);
 
-
-        return null;
+        return dados.toString();
     }
 }

@@ -38,24 +38,25 @@ public class MainApp
 
 
         System.out.println("---------Fornecedores---------");
-        System.out.println("ID...: " + fornecedor.getId());
-        System.out.println("Nome.: " + fornecedor.getNome());
-        System.out.println("Email: " + fornecedor.getEmail());
-        System.out.println("Fone.: " + fornecedor.getFone());
+        System.out.print(fornecedor.getDados());
+//        System.out.println("ID...: " + fornecedor.getId());
+//        System.out.println("Nome.: " + fornecedor.getNome());
+//        System.out.println("Email: " + fornecedor.getEmail());
+//        System.out.println("Fone.: " + fornecedor.getFone());
 
-        if(fornecedor instanceof Nacional)
-        {
-
-            System.out.println("CNPJ.: " + ((Nacional)fornecedor).getCnpj());
-
-        }
-        else
-        {
-
-            System.out.println("Pais.: " + ((Internacinal)fornecedor).getPais());
-            System.out.println("NIF..: " + ((Internacinal)fornecedor).getNif());
-
-        }
+//        if(fornecedor instanceof Nacional)
+//        {
+//
+//            System.out.println("CNPJ.: " + ((Nacional)fornecedor).getCnpj());
+//
+//        }
+//        else
+//        {
+//
+//            System.out.println("Pais.: " + ((Internacinal)fornecedor).getPais());
+//            System.out.println("NIF..: " + ((Internacinal)fornecedor).getNif());
+//
+//        }
 
         System.out.println("------------------------------\n");
 
