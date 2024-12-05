@@ -19,6 +19,7 @@ public class Nacional extends Fornecedor
     public String getDados()
     {
         StringBuilder dados = new StringBuilder();
+        dados.append(super.getDados());
         dados.append("CNPJ.....: ").append(this.cnpj).append("\n");
 
 

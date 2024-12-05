@@ -31,6 +31,7 @@ public class Internacinal extends Fornecedor
     public String getDados()
     {
         StringBuilder dados = new StringBuilder();
+        dados.append(super.getDados());
         dados.append("Nif......: ").append(this.nif).append("\n");
         dados.append("Pais.....: ").append(this.pais).append("\n");
 
