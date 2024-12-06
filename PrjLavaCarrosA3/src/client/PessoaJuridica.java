@@ -1,4 +1,4 @@
-package domain;
+package client;
 
 public class PessoaJuridica extends Cliente
 {
