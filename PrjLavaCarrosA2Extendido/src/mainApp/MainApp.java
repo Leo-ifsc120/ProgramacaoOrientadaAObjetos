@@ -62,7 +62,7 @@ public class MainApp
         leia.nextLine();
         veiculo1.getModelo().getMotor().setPotencia(potencia);
 
-        System.out.println("Selecione o tipo de combustivel do carro\n1 - Gasolina\n2 - Etanol\n3 - Flex\n4 - Diesel\n5 - GNV\n6 - Outro");
+        System.out.println("Selecione o tipo de combustível do carro\n1 - Gasolina\n2 - Etanol\n3 - Flex\n4 - Diesel\n5 - GNV\n6 - Outro");
         combustivel = leia.next();
         switch(combustivel)
         {
@@ -105,8 +105,8 @@ public class MainApp
         System.out.println("Categoria...: " + veiculo.getModelo().getCategoria().getId() + veiculo.getModelo().getCategoria().getDescricao());
         System.out.println("Cor.........: " + veiculo.getCor().getNome());
         System.out.println("Marca.......: " + veiculo.getModelo().getMarca().getNome());
-        System.out.println("Motor.......: cv " + veiculo.getModelo().getMotor().getPotencia());
-        System.out.println("Combustivel.: " + veiculo.getModelo().getMotor().getTipoCombustivel().getId() + veiculo.getModelo().getMotor().getTipoCombustivel().getDescricao());
+        System.out.println("Potencia....: cv " + veiculo.getModelo().getMotor().getPotencia());
+        System.out.println("Combustível.: " + veiculo.getModelo().getMotor().getTipoCombustivel().getId() + veiculo.getModelo().getMotor().getTipoCombustivel().getDescricao());
 
     }
 
