@@ -18,11 +18,17 @@ public class Pontuacao
 
     }
 
-    public void subtrair(int valor)
+    public int subtrair(int valor)
     {
 
-        this.quantidade = this.quantidade - valor;
+            if(this.quantidade - valor > 0)
+            {
 
+                this.quantidade = this.quantidade - valor;
+
+            }
+
+            return this.quantidade;
     }
 
 }
