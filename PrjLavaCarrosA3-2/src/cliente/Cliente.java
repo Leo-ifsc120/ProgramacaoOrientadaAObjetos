@@ -1,4 +1,4 @@
-package client;
+package cliente;
 
 import domain.Veiculo;
 

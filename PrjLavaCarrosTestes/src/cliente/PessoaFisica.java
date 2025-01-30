@@ -1,6 +1,8 @@
-package client;;
+package cliente;
 
 import java.util.Date;
+
+;
 
 public class PessoaFisica extends Cliente
 {
