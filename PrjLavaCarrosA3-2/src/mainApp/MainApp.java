@@ -16,8 +16,6 @@ public class MainApp
         Veiculo veiculo1 = new Veiculo();
         Cor cor1 = new Cor();
 
-
-
         System.out.print("Informe a marca do carro: ");
         marca = leia.next();
         marca1.setNome(marca);
