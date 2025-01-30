@@ -2,23 +2,20 @@ package cliente;
 
 import domain.Veiculo;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-public abstract class Cliente
+public abstract class Cliente implements ICliente
 {
 
-    private int id;
-    private String nome;
-    private String celular;
-    private String email;
-    private Date dataCadastro;
-    private Pontuacao pontuacao;
-    private Veiculo veiculo;
-
-    public Cliente()
-    {
-        pontuacao = new Pontuacao();
-    }
+    protected int id;
+    protected String nome;
+    protected String celular;
+    protected String email;
+    protected Date dataCadastro;
+    protected Pontuacao pontuacao;
+    protected List<Veiculo> veiculos = new ArrayList<>();
 
     public int getId()
     {
@@ -75,14 +72,61 @@ public abstract class Cliente
         return pontuacao;
     }
 
-    public Veiculo getVeiculo()
+    public void add(Veiculo veiculo)
     {
-        return veiculo;
+        this.veiculos.add(veiculo);
+        veiculo.setCliente(this);
     }
 
-    public void setVeiculo(Veiculo veiculo)
+    public void remove(Veiculo veiculo)
     {
-        this.veiculo = veiculo;
+        this.veiculos.remove(veiculo);
+        veiculo.setCliente(null);
     }
+
+    public String getDados()
+    {
+        StringBuilder dados = new StringBuilder();
+        dados.append("ID................: ").append(this.getId()).append("\n");
+        dados.append("Nome..............: ").append(this.getNome()).append("\n");
+        dados.append("celular...........: ").append(this.getCelular()).append("\n");
+        dados.append("Email.............: ").append(this.getEmail()).append("\n");
+        dados.append("Data de cadastro..: ").append(this.getDataCadastro()).append("\n");
+        dados.append("Pontuação.........: ").append(this.getPontuacao()).append("\n");
+        return dados.toString();
+    }
+
+    @Override
+    public String getDados(String obs)
+    {
+        StringBuilder dados = new StringBuilder();
+        dados.append(getDados()).append("\n").append("Obsevação.........: ").append(obs);
+        return dados.toString();
+    }
+
+    public String getDadosVeiculos()
+    {
+        StringBuilder dados = new StringBuilder();
+        dados.append("-------------Lista de veiculos-------------").append("\n");
+        if(this.veiculos != null && !this.veiculos.isEmpty())
+        {
+            dados.append("-------------------carro-------------------").append("\n");
+            for(Veiculo veiculo : this.veiculos)
+            {
+                dados.append("Id......: ").append(veiculo.getId()).append("\n");
+                dados.append("Placa...: ").append(veiculo.getPlaca()).append("\n");
+                dados.append("Modelo..: ").append(veiculo.getModelo().getDescricao()).append("\n");
+                dados.append("Marca...: ").append(veiculo.getModelo().getMarca().getNome()).append("\n");
+                dados.append("Cor.....: ").append(veiculo.getCor().getNome()).append("\n");
+                dados.append("\n");
+            }
+        }
+        else
+        {
+            dados.append("Nenhum veiculo cadastrado");
+        }
+        return getDados().toString();
+    }
+
 
 }

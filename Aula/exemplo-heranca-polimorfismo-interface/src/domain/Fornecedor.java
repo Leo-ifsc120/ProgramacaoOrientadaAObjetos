@@ -56,10 +56,6 @@ public abstract class Fornecedor implements IResumoDados
         dados.append("Nome.....: ").append(this.getNome()).append("\n");
         dados.append("Email....: ").append(this.getEmail()).append("\n");
         dados.append("fone.....: ").append(this.getFone()).append("\n");
-
-
-
-
         return dados.toString();
     }
 

@@ -1,5 +1,7 @@
 package domain;
 
+import cliente.Cliente;
+
 public class Veiculo
 {
 
@@ -8,6 +10,7 @@ public class Veiculo
     private String observacaes;
     private Modelo modelo;
     private Cor cor;
+    private Cliente cliente;
 
     public Veiculo()
     {
@@ -64,4 +67,13 @@ public class Veiculo
         this.cor = cor;
     }
 
+    public Cliente getCliente()
+    {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente)
+    {
+        this.cliente = cliente;
+    }
 }
