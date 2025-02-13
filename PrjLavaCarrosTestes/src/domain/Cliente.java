@@ -1,6 +1,4 @@
-package cliente;
-
-import domain.Veiculo;
+package domain;
 
 import java.util.Date;
 

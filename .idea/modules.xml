@@ -7,11 +7,15 @@
       <module fileurl="file://$PROJECT_DIR$/PrjLavaCarrosA2-2/PrjLavaCarrosA2-2.iml" filepath="$PROJECT_DIR$/PrjLavaCarrosA2-2/PrjLavaCarrosA2-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrjLavaCarrosA3/PrjLavaCarrosA3.iml" filepath="$PROJECT_DIR$/PrjLavaCarrosA3/PrjLavaCarrosA3.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrjLavaCarrosA3-2/PrjLavaCarrosA3-2.iml" filepath="$PROJECT_DIR$/PrjLavaCarrosA3-2/PrjLavaCarrosA3-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrjLavaCarrosFinal/PrjLavaCarrosFinal.iml" filepath="$PROJECT_DIR$/PrjLavaCarrosFinal/PrjLavaCarrosFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrjLavaCarrosTestes/PrjLavaCarrosTestes.iml" filepath="$PROJECT_DIR$/PrjLavaCarrosTestes/PrjLavaCarrosTestes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Programação orientada a objetos.iml" filepath="$PROJECT_DIR$/.idea/Programação orientada a objetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula/exemplo-Static/exemplo-Static.iml" filepath="$PROJECT_DIR$/Aula/exemplo-Static/exemplo-Static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula/exemplo-associacao_por_dependencia/exemplo-associacao_por_dependencia.iml" filepath="$PROJECT_DIR$/Aula/exemplo-associacao_por_dependencia/exemplo-associacao_por_dependencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula/exemplo-heranca/exemplo-heranca.iml" filepath="$PROJECT_DIR$/Aula/exemplo-heranca/exemplo-heranca.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula/exemplo-heranca-polimorfismo/exemplo-heranca-polimorfismo.iml" filepath="$PROJECT_DIR$/Aula/exemplo-heranca-polimorfismo/exemplo-heranca-polimorfismo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula/exemplo-heranca-polimorfismo-interface/exemplo-heranca-polimorfismo-interface.iml" filepath="$PROJECT_DIR$/Aula/exemplo-heranca-polimorfismo-interface/exemplo-heranca-polimorfismo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula/prj-associacao_por_dependencia/prj-associacao_por_dependencia.iml" filepath="$PROJECT_DIR$/Aula/prj-associacao_por_dependencia/prj-associacao_por_dependencia.iml" />
     </modules>
   </component>
 </project>

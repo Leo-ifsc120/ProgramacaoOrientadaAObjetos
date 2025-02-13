@@ -1,7 +1,5 @@
 package domain;
 
-import cliente.Cliente;
-
 public class Veiculo
 {
 
